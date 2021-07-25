@@ -163,7 +163,7 @@ beta-par : ∀{Γ A}{M N : Γ ⊢ A}
   → M —→ N
     ------
   → M ⇛ N
-beta-par {Γ} {★} {L · M} (ξ₁ r) = papp (beta-par {M = L} r) par-refl
+beta-par {Γ} {★} {L · M} (ξ₁ r) = papp (beta-par r) par-refl
 beta-par {Γ} {★} {L · M} (ξ₂ r) = papp par-refl (beta-par {M = M} r)
 beta-par {Γ} {★} {(ƛ N) · M} β = pbeta par-refl par-refl
 beta-par {Γ} {★} {ƛ N} (ζ r) = pabs (beta-par r)
