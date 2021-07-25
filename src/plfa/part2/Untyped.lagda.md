@@ -862,8 +862,8 @@ abs-cong : ∀ {Γ} {N N' : Γ , ★ ⊢ ★}
          → N —↠ N'
            ----------
          → ƛ N —↠ ƛ N'
-abs-cong (M ∎) = ƛ M ∎
-abs-cong (L —→⟨ r ⟩ rs) = ƛ L —→⟨ ζ r ⟩ abs-cong rs
+abs-cong (M ∎) = ƛ N ∎
+abs-cong (N —→⟨ r ⟩ rs) = ƛ N —→⟨ ζ r ⟩ abs-cong rs
 ```
 
 ## Unicode
